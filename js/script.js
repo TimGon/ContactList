@@ -218,7 +218,7 @@ function openModal() {
             contactArrName[i] = contactsUsers[i][0];
         }
 
-        contactArrName.sort((a, b) => a.toLowerCase() > b.toLowerCase() ? 1 : -1);
+        contactArrName.sort((a, b) => a.localeCompare(b));
 
         //sorting by template (contactArrName)
         for (let i = 0; i < contactsUsers.length; i++){
